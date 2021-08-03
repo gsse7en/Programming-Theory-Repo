@@ -21,8 +21,6 @@ public class SpawnManager : MonoBehaviour
     }
     void SpawnRandomEnemy()
     {
-        Vector3 spawnPos = new Vector3(12f, 0.9f, Random.Range(-spawnBound, spawnBound));
-        int enemyIndex = Random.Range(0, enemyTypes.Length);
-        Instantiate(enemyTypes[enemyIndex], spawnPos, enemyTypes[enemyIndex].transform.rotation);
+        GameManager.Instance.CreateEnemy(spawnBound);
     }
 }

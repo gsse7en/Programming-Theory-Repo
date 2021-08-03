@@ -10,6 +10,8 @@ using UnityEditor;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public GameObject[] enemyTypes;
+
     public string inputName;
     private void Awake()
     {
@@ -40,15 +42,12 @@ public class GameManager : MonoBehaviour
     {
         inputName = name;
     }
-    public class Enemy : MonoBehaviour
+    public void CreateEnemy(float spawnBound)
     {
-        public void DealDamage()
-        {
-            //Player Health -= damage
-        }
+        Vector3 spawnPos = new Vector3(18f, 0.9f, Random.Range(-spawnBound, spawnBound));
+        int enemyIndex = Random.Range(0, enemyTypes.Length);
+        Instantiate(enemyTypes[enemyIndex], spawnPos, enemyTypes[enemyIndex].transform.rotation);
     }
-    public class Chicken : Enemy
-    {
-
-    }
+    
 }
+

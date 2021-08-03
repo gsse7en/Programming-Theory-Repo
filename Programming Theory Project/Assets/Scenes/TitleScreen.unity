@@ -1145,6 +1145,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5a8b2e1e8aef4ff0ac856bc69bfa572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyTypes:
+  - {fileID: 8894978868354928247, guid: 3787ad3b50d1b45da8547c53d72a6947, type: 3}
+  - {fileID: 7697097917104310888, guid: d3636790cc4f54748a28c71f3be005fd, type: 3}
+  - {fileID: 9174524263280369936, guid: 81e4e9fad5268473089c556a454fcf64, type: 3}
   inputName: 
 --- !u!4 &1473793193
 Transform:
