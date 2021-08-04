@@ -1,5 +1,5 @@
 using UnityEngine;
-public class Chicken : Enemy
+public class Chicken : Enemy //INHERITANCE
 {
     public override void Update()
     {

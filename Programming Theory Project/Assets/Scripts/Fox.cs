@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Fox : Enemy
 {
-    public override void Update()
+    public override void Update() //POLYMORPHISM
     {
        Move();
        MoveTowardsPlayer();

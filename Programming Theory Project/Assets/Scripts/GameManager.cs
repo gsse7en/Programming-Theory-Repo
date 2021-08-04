@@ -9,7 +9,12 @@ using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    private static GameManager instance;
+    public static GameManager Instance 
+    {
+        get { return instance; } 
+        set { instance = value; }//ENCAPSULATION
+    }
     public GameObject[] enemyTypes;
 
     public string inputName;

@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
     {
        Move();
     }
-    protected void Move()
+    protected void Move() //ABSTRACTION
     {
         if (transform.position.x < xBound)
         {
